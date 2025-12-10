@@ -1,0 +1,240 @@
+.section {
+    padding: var(--spacing-5xl) 0;
+    background: linear-gradient(180deg, var(--color-gray-50) 0%, var(--color-white) 100%);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: var(--spacing-4xl);
+}
+
+.title {
+    font-size: var(--font-size-5xl);
+    font-weight: 900;
+    margin-bottom: var(--spacing-lg);
+    letter-spacing: -0.01em;
+}
+
+.subtitle {
+    font-size: var(--font-size-xl);
+    color: var(--color-gray-600);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.carousel {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.mainCard {
+    background: var(--color-white);
+    border-radius: var(--radius-2xl);
+    padding: var(--spacing-3xl);
+    box-shadow: var(--shadow-xl);
+    margin-bottom: var(--spacing-3xl);
+    animation: fadeIn 0.5s ease-out;
+}
+
+.cardIcon {
+    font-size: var(--font-size-6xl);
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.company {
+    text-align: center;
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: var(--spacing-sm);
+}
+
+.caseTitle {
+    text-align: center;
+    font-size: var(--font-size-3xl);
+    font-weight: 800;
+    margin-bottom: var(--spacing-3xl);
+    color: var(--color-gray-900);
+}
+
+.beforeAfter {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-3xl);
+    align-items: center;
+}
+
+.beforeSection,
+.afterSection {
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+}
+
+.beforeSection {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(239, 68, 68, 0.05) 100%);
+    border-left: 4px solid var(--color-error);
+}
+
+.afterSection {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(16, 185, 129, 0.05) 100%);
+    border-left: 4px solid var(--color-success);
+}
+
+.label {
+    font-weight: 700;
+    font-size: var(--font-size-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--spacing-sm);
+}
+
+.beforeSection .label {
+    color: var(--color-error);
+}
+
+.afterSection .label {
+    color: var(--color-success);
+}
+
+.beforeSection p,
+.afterSection p {
+    font-size: var(--font-size-base);
+    color: var(--color-gray-700);
+    line-height: var(--line-height-relaxed);
+}
+
+.arrow {
+    font-size: var(--font-size-3xl);
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.impactSection {
+    padding: var(--spacing-xl);
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(236, 72, 153, 0.1) 100%);
+    border-radius: var(--radius-lg);
+}
+
+.impactLabel {
+    font-weight: 800;
+    font-size: var(--font-size-lg);
+    color: var(--color-gray-900);
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+}
+
+.impactList {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.impactItem {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    font-size: var(--font-size-lg);
+    color: var(--color-gray-800);
+    font-weight: 600;
+}
+
+.impactCheck {
+    color: var(--color-success);
+    font-weight: 900;
+    font-size: var(--font-size-xl);
+    flex-shrink: 0;
+}
+
+.navigation {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navButton {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: var(--color-white);
+    border: 2px solid var(--color-gray-200);
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-gray-600);
+}
+
+.navButton:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.navButton.active {
+    background: var(--gradient-primary);
+    border-color: transparent;
+    color: var(--color-white);
+    box-shadow: var(--shadow-glow);
+}
+
+.navIcon {
+    font-size: var(--font-size-xl);
+}
+
+.navText {
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: var(--font-size-4xl);
+    }
+
+    .subtitle {
+        font-size: var(--font-size-lg);
+    }
+
+    .mainCard {
+        padding: var(--spacing-2xl);
+    }
+
+    .caseTitle {
+        font-size: var(--font-size-2xl);
+    }
+
+    .beforeAfter {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .arrow {
+        transform: rotate(90deg);
+        text-align: center;
+    }
+
+    .navText {
+        display: none;
+    }
+
+    .navButton {
+        padding: var(--spacing-md);
+    }
+}
+
+@media (max-width: 640px) {
+    .cardIcon {
+        font-size: var(--font-size-5xl);
+    }
+
+    .impactItem {
+        font-size: var(--font-size-base);
+    }
+}

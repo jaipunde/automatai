@@ -1,0 +1,75 @@
+.header {
+    padding: 20px 0;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logoIcon {
+    font-size: 24px;
+}
+
+.logoText {
+    font-weight: 800;
+    font-size: 1.25rem;
+    display: block;
+    line-height: 1;
+}
+
+.logoTagline {
+    font-size: 0.75rem;
+    color: #666;
+    margin-top: 4px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.skipLink {
+    border: 1px solid #4facfe;
+    color: #4facfe;
+    padding: 8px 16px;
+    border-radius: 99px;
+    font-size: 0.875rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.navLink {
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+.loginLink {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: 600;
+}
