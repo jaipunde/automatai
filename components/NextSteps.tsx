@@ -35,7 +35,7 @@ export default function NextSteps() {
                         <div className={styles.stepNumber}>2</div>
                         <h3>{steps[1].title}</h3>
                         <ul>
-                            {steps[1].items.map((item, i) => (
+                            {steps[1]?.items?.map((item, i) => (
                                 <li key={i}>{item}</li>
                             ))}
                         </ul>
