@@ -1,0 +1,562 @@
+.section {
+    padding: 80px 0;
+    background: var(--color-background);
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: var(--color-text);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-hover));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.subtitle {
+    font-size: 1.125rem;
+    color: var(--color-text-light);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Step Indicators */
+.stepIndicators {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 48px;
+    padding: 0 20px;
+}
+
+.stepIndicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    opacity: 0.4;
+    transition: all 0.3s ease;
+}
+
+.stepIndicator.active {
+    opacity: 1;
+}
+
+.stepNumber {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--color-card-bg);
+    border: 2px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: var(--color-text-light);
+    transition: all 0.3s ease;
+}
+
+.stepIndicator.active .stepNumber {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-hover));
+    border-color: var(--color-primary);
+    color: white;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.stepLabel {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-text-light);
+    white-space: nowrap;
+}
+
+.stepIndicator.active .stepLabel {
+    color: var(--color-text);
+}
+
+.stepLine {
+    width: 60px;
+    height: 2px;
+    background: var(--color-border);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 500px;
+}
+
+.stepContainer {
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Calendar Section */
+.calendarSection {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.calendar {
+    background: var(--color-card-bg);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-border);
+    transition: all 0.3s ease;
+}
+
+.calendar:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.calendarHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.monthYear {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+.navButton {
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.navButton:hover {
+    background: var(--color-primary-hover);
+    transform: scale(1.1);
+}
+
+.dayNames {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.dayName {
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-text-light);
+    padding: 8px 0;
+}
+
+.daysGrid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+}
+
+.emptyDay {
+    aspect-ratio: 1;
+}
+
+.day {
+    aspect-ratio: 1;
+    border: 1px solid var(--color-border);
+    background: var(--color-background);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text);
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.day:hover:not(.disabled) {
+    background: var(--color-primary);
+    color: white;
+    transform: scale(1.05);
+    border-color: var(--color-primary);
+}
+
+.day.selected {
+    background: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+    font-weight: 700;
+}
+
+.day.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    background: var(--color-card-bg);
+}
+
+/* Time Slots */
+.timeSlots {
+    background: var(--color-card-bg);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-border);
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.selectedDateBadge {
+    background: var(--color-background);
+    border: 1px solid var(--color-border);
+    padding: 16px 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    color: var(--color-text);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.changeButton {
+    background: transparent;
+    color: var(--color-primary-hover);
+    border: 1px solid var(--color-primary-hover);
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.changeButton:hover {
+    background: var(--color-primary-hover);
+    color: white;
+    transform: scale(1.05);
+}
+
+.timeSlotsTitle {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 16px;
+}
+
+.timeSlotsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.timeSlot {
+    padding: 12px;
+    border: 1px solid var(--color-border);
+    background: var(--color-background);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text);
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.timeSlot:hover:not(.unavailable) {
+    background: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+    transform: scale(1.05);
+}
+
+.timeSlot.selectedTime {
+    background: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+    font-weight: 700;
+}
+
+.timeSlot.unavailable {
+    opacity: 0.3;
+    cursor: not-allowed;
+    text-decoration: line-through;
+}
+
+/* Form Section */
+.formSection {
+    max-width: 700px;
+    width: 100%;
+    background: var(--color-card-bg);
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-border);
+    animation: fadeIn 0.4s ease;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.input,
+.textarea {
+    padding: 12px 16px;
+    border: 1px solid var(--color-border);
+    background: var(--color-gray-50);
+    border-radius: 10px;
+    font-size: 1rem;
+    color: var(--color-text);
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.input:focus,
+.textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.selectedInfo {
+    background: var(--color-background);
+    border: 1px solid var(--color-border);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.selectedInfoText {
+    color: var(--color-text);
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.submitButton {
+    padding: 16px 32px;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-hover));
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 8px;
+}
+
+.submitButton:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
+}
+
+.submitButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.successMessage {
+    padding: 16px;
+    background: #10b981;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+    animation: slideIn 0.3s ease;
+}
+
+.errorMessage {
+    padding: 16px;
+    background: #ef4444;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+    animation: slideIn 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+
+    .stepContainer,
+    .formSection {
+        max-width: 100%;
+    }
+
+    .timeSlotsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stepIndicators {
+        gap: 12px;
+    }
+
+    .stepLine {
+        width: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .calendar,
+    .timeSlots,
+    .formSection {
+        padding: 20px;
+    }
+
+    .daysGrid {
+        gap: 4px;
+    }
+
+    .day {
+        font-size: 0.75rem;
+    }
+
+    .timeSlotsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .stepIndicators {
+        gap: 8px;
+    }
+
+    .stepNumber {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .stepLabel {
+        font-size: 0.75rem;
+    }
+
+    .stepLine {
+        width: 30px;
+    }
+
+    .selectedDateBadge {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .calendarHeader {
+        flex-direction: row;
+        gap: 12px;
+    }
+
+    .navButton {
+        width: 36px;
+        height: 36px;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .stepIndicators {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .stepLine {
+        display: none;
+    }
+
+    .selectedDateBadge,
+    .selectedInfo {
+        font-size: 0.875rem;
+    }
+}

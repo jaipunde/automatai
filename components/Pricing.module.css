@@ -1,0 +1,332 @@
+.section {
+    padding: 80px 0;
+    background-color: var(--color-background);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: var(--color-text);
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 12px;
+}
+
+.description {
+    font-size: 1.125rem;
+    color: var(--color-text-light);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Pricing Tiers */
+.tiersGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-bottom: 60px;
+}
+
+.tierCard {
+    background: var(--color-background);
+    border: 2px solid var(--color-border);
+    border-radius: 16px;
+    padding: 32px;
+    position: relative;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.tierCard:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-primary);
+}
+
+.tierCard.popular {
+    border-color: var(--color-primary);
+    border-width: 3px;
+}
+
+.popularBadge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: var(--color-primary);
+    color: var(--color-text);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.tierName {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: var(--color-text);
+}
+
+.tierPrice {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 12px;
+}
+
+.tierDescription {
+    font-size: 1rem;
+    color: var(--color-text-light);
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+
+.includesSection {
+    margin-bottom: 20px;
+}
+
+.includesTitle {
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--color-text);
+}
+
+.includesList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.includesList li {
+    padding-left: 20px;
+    margin-bottom: 8px;
+    position: relative;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: var(--color-text);
+}
+
+.includesList li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--color-accent-green);
+    font-weight: bold;
+}
+
+.examples,
+.timeline {
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+    margin-top: 12px;
+    line-height: 1.4;
+}
+
+/* Process Section */
+.processSection {
+    margin-bottom: 60px;
+    padding: 40px;
+    background: var(--color-gray-50);
+    border-radius: 16px;
+}
+
+.processTitle {
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--color-text);
+}
+
+.processSteps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+}
+
+.step {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.stepNumber {
+    width: 40px;
+    height: 40px;
+    background: var(--color-primary);
+    color: var(--color-text);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 800;
+    flex-shrink: 0;
+}
+
+.stepContent h4 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: var(--color-text);
+}
+
+.stepContent p {
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+    line-height: 1.4;
+}
+
+/* Why Section */
+.whySection {
+    margin-bottom: 60px;
+}
+
+.whyTitle {
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--color-text);
+}
+
+.whyGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.whyItem {
+    padding: 20px;
+    background: var(--color-background);
+    border: 2px solid var(--color-border);
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text);
+    text-align: center;
+}
+
+/* ROI Example */
+.roiExample {
+    margin-bottom: 60px;
+    padding: 40px;
+    background: var(--color-accent-pink);
+    border-radius: 16px;
+    border: 2px solid var(--color-border);
+}
+
+.roiTitle {
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: var(--color-text);
+}
+
+.roiProject {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: var(--color-text);
+}
+
+.roiComparison {
+    display: grid;
+    gap: 16px;
+}
+
+.roiBefore,
+.roiAfter,
+.roiSavings,
+.roiPayback {
+    padding: 16px;
+    background: var(--color-background);
+    border-radius: 8px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.roiSavings {
+    background: var(--color-accent-green);
+    color: var(--color-background);
+}
+
+.roiPayback {
+    background: var(--color-primary);
+}
+
+/* CTA Section */
+.cta {
+    text-align: center;
+    padding: 60px 40px;
+    background: var(--color-gray-50);
+    border-radius: 16px;
+}
+
+.ctaTitle {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: var(--color-text);
+}
+
+.ctaText {
+    font-size: 1.125rem;
+    color: var(--color-text-light);
+    margin-bottom: 32px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ctaContact {
+    margin-top: 32px;
+    font-size: 1rem;
+    color: var(--color-text-light);
+}
+
+.ctaContact p {
+    margin-bottom: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+    }
+
+    .tiersGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .processSteps {
+        grid-template-columns: 1fr;
+    }
+
+    .whyGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .ctaTitle {
+        font-size: 1.75rem;
+    }
+
+    .processSection,
+    .cta,
+    .roiExample {
+        padding: 24px;
+    }
+}

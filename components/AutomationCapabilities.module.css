@@ -1,0 +1,55 @@
+.section {
+    padding: 80px 0;
+    background-color: var(--color-background);
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+.subHeading {
+    color: var(--color-text-light);
+    font-size: 2.5rem;
+}
+
+.intro {
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    font-weight: 700;
+    margin-bottom: 48px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+.card {
+    background: var(--color-background);
+    padding: 32px;
+    border-radius: 16px;
+    border: 2px solid var(--color-text);
+    box-shadow: 4px 4px 0px var(--color-text);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.cardTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.cardDescription {
+    color: var(--color-text-light);
+    line-height: 1.6;
+}

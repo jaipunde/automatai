@@ -1,56 +1,46 @@
 .section {
-    padding: 100px 0;
-    background-color: #ffffff;
+    padding: 80px 0;
+    background-color: var(--color-background);
 }
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* Image left, Text right */
-    gap: 80px;
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
 }
 
 .title {
-    font-size: 3.5rem;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 800;
     line-height: 1.2;
     margin-bottom: 32px;
-    color: #000;
+    color: var(--color-text);
 }
 
 .description {
     font-size: 1.125rem;
     line-height: 1.6;
-    color: #4a4a4a;
+    color: var(--color-text-light);
     margin-bottom: 40px;
-    max-width: 500px;
 }
 
-.features {
-    margin-top: 60px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+.card {
+    background: var(--color-background);
+    border: 2px solid var(--color-text);
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 0 var(--color-text);
 }
 
-.feature {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: #000;
+.stepTitle {
+    font-weight: 800;
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+    color: var(--color-primary);
 }
 
-.iconBox {
-    font-size: 24px;
-    margin-bottom: 8px;
-}
-
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .grid {
         grid-template-columns: 1fr;
-        gap: 40px;
     }
 }

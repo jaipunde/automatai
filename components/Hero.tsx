@@ -1,5 +1,5 @@
 import styles from './Hero.module.css';
-import PlaceholderImage from './PlaceholderImage';
+import Image from 'next/image';
 
 export default function Hero() {
     return (
@@ -8,33 +8,52 @@ export default function Hero() {
                 <div className={styles.grid}>
                     <div className={styles.content}>
                         <h1 className={styles.headline}>
-                            Automate the <br /> Boring Stuff
+                            Your Business Runs on Repeat Tasks. <br /> We Make Them Disappear.
                         </h1>
                         <p className={styles.subheadline}>
-                            Remgur AI offers an innovative and powerful way to automate repetitive daily tasks
-                            using Artificial Intelligence and your common apps, empowering your business to achieve more.
+                            Stop wasting hours on work a computer should handle. We build intelligent automation that works while you sleep—so you can focus on what actually grows your business.
                         </p>
 
-                        <a href="#" className="btn btn-primary">Get Started</a>
+                        <div style={{ display: 'flex', gap: '16px' }}>
+                            <a href="#schedule" className="btn btn-primary">Free Automation Audit</a>
+                            <a href="#testimonials" className="btn btn-outline">See Real Results</a>
+                        </div>
 
                         <div className={styles.features}>
                             <div className={styles.feature}>
                                 <span className={styles.featureIcon}>⚡</span>
-                                <span>Revolutionize & Optimize</span>
+                                <span>Save Time</span>
                             </div>
                             <div className={styles.feature}>
                                 <span className={styles.featureIcon}>🔄</span>
-                                <span>Innovation & Efficiency</span>
+                                <span>Reduce Errors</span>
                             </div>
                             <div className={styles.feature}>
-                                <span className={styles.featureIcon}>🔗</span>
-                                <span>Streamlined Operations</span>
+                                <span className={styles.featureIcon}>📈</span>
+                                <span>Scale Growth</span>
                             </div>
                         </div>
                     </div>
 
                     <div className={styles.heroImage}>
-                        <PlaceholderImage height="600px" text="Hero Illustration: Characters on Phone Stack" color="#eef" />
+                        <div className={styles.lightModeImage}>
+                            <Image
+                                src="/Gemini_Generated_Image_ins8qoins8qoins8.png"
+                                alt="Automation Machine - Light Mode"
+                                fill
+                                style={{ objectFit: 'contain' }}
+                                priority
+                            />
+                        </div>
+                        <div className={styles.darkModeImage}>
+                            <Image
+                                src="/Gemini_Generated_Image_rolobarolobarolo.png"
+                                alt="Automation Machine - Dark Mode"
+                                fill
+                                style={{ objectFit: 'contain' }}
+                                priority
+                            />
+                        </div>
                     </div>
                 </div>
             </div>

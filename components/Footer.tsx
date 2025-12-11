@@ -32,27 +32,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className={styles.trustSignals}>
-                    <p className={styles.trustTitle}>Trusted By Growing Teams</p>
-                    <div className={styles.clientList}>
-                        <span>MWA.ai</span>
-                        <span>•</span>
-                        <span>Nuamore</span>
-                        <span>•</span>
-                        <span>SFJ</span>
-                        <span>•</span>
-                        <span>Rocket Revenue</span>
-                        <span>•</span>
-                        <span>GRR BAOW</span>
-                        <span>•</span>
-                        <span>FROLIC</span>
-                        <span>•</span>
-                        <span>MakeMyVid</span>
-                    </div>
-                    <p className={styles.trustSubtitle}>
-                        Helping businesses save thousands of hours and scale without the overhead.
-                    </p>
-                </div>
+
 
                 <div className={styles.bottom}>
                     <p className={styles.copyright}>© 2025 AutomatAI. All rights reserved.</p>

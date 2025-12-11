@@ -26,9 +26,29 @@
   --color-text: #1a1a1a;
   --color-text-light: #4a4a4a;
   --color-border: #e5e5e5;
+  --color-card-bg: #ffffff;
+
+  /* Gray Scale */
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+
+  /* Status Colors */
+  --color-success: #10b981;
+  --color-error: #ef4444;
+  --color-warning: #f59e0b;
+  --color-info: #3b82f6;
 
   /* Gradients (retained but subtle) */
   --gradient-card: linear-gradient(180deg, #ffffff 0%, #f9f9f9 100%);
+  --gradient-primary: linear-gradient(135deg, #ffc20e 0%, #e0a800 100%);
 
   /* Spacing Scale */
   --spacing-xs: 0.5rem;
@@ -53,21 +73,100 @@
   --font-size-5xl: 3.5rem;
   --font-size-6xl: 4.5rem;
 
+  /* Line Heights */
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
   /* Border Radius */
   --radius-sm: 0.375rem;
   --radius-md: 0.5rem;
   --radius-lg: 1rem;
   --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
   --radius-full: 9999px;
 
   /* Shadows */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
   --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.05);
+  --shadow-glow: 0 0 20px rgba(255, 194, 14, 0.3);
 
   /* Transitions */
   --transition-base: 0.2s ease-in-out;
+  --transition-fast: 0.15s ease-in-out;
+}
+
+[data-theme='dark'] {
+  --color-primary: #ffc20e;
+  --color-primary-hover: #e0a800;
+  --color-secondary: #ffffff;
+
+  --color-accent-pink: #2d1b2e;
+  /* Dark pink roughly */
+  --color-accent-green: #008f6b;
+  --color-accent-blue: #1a3c5e;
+
+  /* Neutral Colors Dark */
+  --color-white: #1a1a1a;
+  /* Inverted for contexts */
+  --color-background: #000000;
+  --color-text: #ffffff;
+  --color-text-light: #a0a0a0;
+  --color-border: #333333;
+  --color-card-bg: #1a1a1a;
+
+  /* Gray Scale - Inverted for dark mode */
+  --color-gray-50: #1f2937;
+  --color-gray-100: #374151;
+  --color-gray-200: #4b5563;
+  --color-gray-300: #6b7280;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #d1d5db;
+  --color-gray-600: #e5e7eb;
+  --color-gray-700: #f3f4f6;
+  --color-gray-800: #f9fafb;
+  --color-gray-900: #ffffff;
+
+  /* Status Colors - Slightly adjusted for dark mode */
+  --color-success: #10b981;
+  --color-error: #ef4444;
+  --color-warning: #f59e0b;
+  --color-info: #3b82f6;
+
+  /* Gradients */
+  --gradient-card: linear-gradient(180deg, #1a1a1a 0%, #000000 100%);
+  --gradient-primary: linear-gradient(135deg, #ffc20e 0%, #e0a800 100%);
+
+  /* Shadows - adapt to white glow */
+  --shadow-sm: 0 1px 2px rgba(255, 255, 255, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(255, 255, 255, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(255, 255, 255, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(255, 255, 255, 0.1);
+  --shadow-card: 0 4px 20px rgba(255, 255, 255, 0.05);
+  --shadow-glow: 0 0 20px rgba(255, 194, 14, 0.4);
+}
+
+[data-theme='dark'] .btn-primary {
+  border-color: #fff;
+  box-shadow: 4px 4px 0px #fff;
+  color: #000;
+}
+
+[data-theme='dark'] .btn-primary:hover {
+  box-shadow: 6px 6px 0px #fff;
+}
+
+[data-theme='dark'] .btn-outline {
+  border-color: #fff;
+  color: #fff;
+}
+
+[data-theme='dark'] .btn-outline:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 html {
@@ -153,4 +252,25 @@ body {
 section {
   padding: var(--spacing-4xl) 0;
   overflow: hidden;
+  background-color: var(--color-background);
+  /* Explicitly set to use variable */
+}
+
+/* Dark mode specific component overrides if needed override module css */
+[data-theme='dark'] .card,
+[data-theme='dark'] .step,
+[data-theme='dark'] .cardDetail {
+  background: #1a1a1a !important;
+  border-color: #444 !important;
+  color: #fff !important;
+  box-shadow: 4px 4px 0 #fff !important;
+}
+
+[data-theme='dark'] .cardDetail:hover,
+[data-theme='dark'] .card:hover {
+  border-color: var(--color-primary) !important;
+}
+
+[data-theme='dark'] .logoIcon {
+  filter: invert(1);
 }

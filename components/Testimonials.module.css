@@ -1,0 +1,94 @@
+.section {
+    padding: 80px 0;
+    background-color: var(--color-background);
+    overflow: hidden;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--color-text);
+}
+
+.scrollContainer {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.scrollTrack {
+    display: flex;
+    gap: 24px;
+    animation: scroll 60s linear infinite;
+    width: fit-content;
+}
+
+.scrollTrack:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.card {
+    background: var(--color-background);
+    padding: 32px;
+    border-radius: 12px;
+    border: 2px solid var(--color-border);
+    min-width: 400px;
+    max-width: 400px;
+    flex-shrink: 0;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-primary);
+}
+
+.quote {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: var(--color-text);
+}
+
+.author {
+    font-weight: 700;
+    color: var(--color-text-light);
+    font-size: 0.875rem;
+}
+
+.company {
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .card {
+        min-width: 300px;
+        max-width: 300px;
+        padding: 24px;
+    }
+
+    .scrollTrack {
+        animation: scroll 40s linear infinite;
+    }
+}

@@ -1,8 +1,8 @@
 .footer {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: var(--color-background);
+    color: var(--color-text);
     padding: 80px 0 40px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid var(--color-border);
 }
 
 .content {
@@ -15,12 +15,12 @@
 .logo {
     font-size: 1.5rem;
     font-weight: 800;
-    color: #000;
+    color: var(--color-text);
     margin-bottom: 12px;
 }
 
 .tagline {
-    color: #666;
+    color: var(--color-text-light);
     font-size: 1rem;
 }
 
@@ -34,7 +34,7 @@
     font-size: 0.875rem;
     font-weight: 700;
     text-transform: uppercase;
-    color: #999;
+    color: var(--color-gray-400);
     margin-bottom: 16px;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .linkList a {
-    color: #000;
+    color: var(--color-text);
     text-decoration: none;
     font-weight: 500;
 }
@@ -54,15 +54,15 @@
 .trustSignals {
     text-align: center;
     padding: 40px 0;
-    border-top: 1px solid #f0f0f0;
-    border-bottom: 1px solid #f0f0f0;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
     margin-bottom: 40px;
 }
 
 .bottom {
     display: flex;
     justify-content: space-between;
-    color: #666;
+    color: var(--color-text-light);
     font-size: 0.875rem;
 }
 
@@ -72,6 +72,6 @@
 }
 
 .legal a {
-    color: #666;
+    color: var(--color-text-light);
     text-decoration: none;
 }

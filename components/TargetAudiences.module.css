@@ -1,64 +1,146 @@
 .section {
-    padding: 100px 0;
-    background-color: #ffffff;
+    padding: 60px 0;
+    background-color: var(--color-gray-50);
 }
 
 .header {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 .title {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #000;
+    font-size: 2.5rem;
+    font-weight: 800;
 }
 
 .subtitle {
-    font-size: 1.125rem;
-    color: #666;
-    max-width: 800px;
+    font-size: 1rem;
+    color: var(--color-text-light);
+    max-width: 600px;
+    margin: 12px auto 0;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
+    gap: 20px;
 }
 
-.card {
-    text-align: left;
-}
-
-.imageWrapper {
-    margin-bottom: 24px;
-    border-radius: 8px;
+.cardDetail {
+    background: var(--color-background);
+    border: 2px solid var(--color-border);
+    border-radius: 12px;
+    padding: 0;
+    transition: transform 0.2s;
     overflow: hidden;
-    border: 2px solid #000;
-    /* Comic border style */
-    box-shadow: 4px 4px 0px #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardDetail:hover {
+    border-color: var(--color-text);
+    transform: translateY(-4px);
+}
+
+.imageContainer {
+    width: 100%;
+    overflow: hidden;
+    background: var(--color-gray-100);
+}
+
+.cardImage {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.cardContent {
+    padding: 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .cardTitle {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 700;
-    margin-bottom: 8px;
-    color: #000;
+    margin-bottom: 6px;
+    line-height: 1.2;
 }
 
 .cardDesc {
-    font-size: 0.875rem;
-    color: #666;
+    font-size: 0.8rem;
+    color: var(--color-text-light);
+    margin-bottom: 12px;
+    line-height: 1.3;
 }
 
-@media (max-width: 1024px) {
+.featuresSection {
+    margin-bottom: 0;
+}
+
+.featuresTitle {
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: var(--color-text);
+}
+
+.featureList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.featureList li {
+    margin-bottom: 4px;
+    display: flex;
+    gap: 6px;
+    align-items: flex-start;
+    font-size: 0.75rem;
+    line-height: 1.2;
+}
+
+.checkmark {
+    color: var(--color-accent-green);
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.impactBox {
+    background: var(--color-accent-pink);
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    border-left: 3px solid var(--color-primary);
+    margin-top: 12px;
+}
+
+.impactLabel {
+    font-weight: 700;
+    margin-bottom: 4px;
+    font-size: 0.75rem;
+}
+
+.impactText {
+    margin: 0;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+@media (max-width: 1200px) {
     .grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .grid {
         grid-template-columns: 1fr;
+    }
+
+    .title {
+        font-size: 2rem;
     }
 }
