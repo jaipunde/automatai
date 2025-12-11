@@ -12,21 +12,46 @@
 }
 
 .title {
-    font-size: 3rem;
+    font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 700;
     line-height: 1.2;
     color: var(--color-text);
 }
 
 .description {
-    font-size: 1rem;
+    font-size: clamp(0.9375rem, 1.5vw, 1rem);
     line-height: 1.8;
     color: var(--color-text-light);
 }
 
+@media (max-width: 1024px) {
+    .section {
+        padding: 60px 0;
+    }
+
+    .grid {
+        gap: 40px;
+    }
+}
+
 @media (max-width: 768px) {
+    .section {
+        padding: 48px 0;
+    }
+
     .grid {
         grid-template-columns: 1fr;
         gap: 32px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: 40px 0;
+    }
+
+    .grid {
+        gap: 24px;
     }
 }

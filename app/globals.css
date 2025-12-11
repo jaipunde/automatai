@@ -256,6 +256,84 @@ section {
   /* Explicitly set to use variable */
 }
 
+/* Responsive Typography */
+h1,
+.h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.1;
+}
+
+h2,
+.h2 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  line-height: 1.2;
+}
+
+h3,
+.h3 {
+  font-size: clamp(1.25rem, 3vw, 1.875rem);
+  line-height: 1.3;
+}
+
+/* Responsive Utilities */
+.hide-mobile {
+  display: block;
+}
+
+.show-mobile {
+  display: none;
+}
+
+/* Responsive Sections Padding */
+@media (max-width: 1024px) {
+  section {
+    padding: var(--spacing-3xl) 0;
+  }
+
+  .container,
+  .container-narrow {
+    padding: 0 var(--spacing-md);
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  .show-mobile {
+    display: block;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    font-size: 0.9375rem;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    min-height: 44px;
+    /* Touch-friendly size */
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .container,
+  .container-narrow {
+    padding: 0 var(--spacing-sm);
+  }
+}
+
 /* Dark mode specific component overrides if needed override module css */
 [data-theme='dark'] .card,
 [data-theme='dark'] .step,

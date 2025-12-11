@@ -10,7 +10,7 @@
 }
 
 .title {
-    font-size: 3rem;
+    font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 800;
     line-height: 1.2;
     margin-bottom: 32px;
@@ -18,7 +18,7 @@
 }
 
 .description {
-    font-size: 1.125rem;
+    font-size: clamp(1rem, 2vw, 1.125rem);
     line-height: 1.6;
     color: var(--color-text-light);
     margin-bottom: 40px;
@@ -39,8 +39,44 @@
     color: var(--color-primary);
 }
 
+@media (max-width: 1024px) {
+    .section {
+        padding: 60px 0;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
 @media (max-width: 768px) {
+    .section {
+        padding: 48px 0;
+    }
+
     .grid {
         grid-template-columns: 1fr;
+    }
+
+    .title {
+        margin-bottom: 24px;
+    }
+
+    .description {
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: 40px 0;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .stepTitle {
+        font-size: 1.125rem;
     }
 }

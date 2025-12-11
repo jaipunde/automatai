@@ -10,7 +10,7 @@
 }
 
 .title {
-    font-size: 3rem;
+    font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 800;
     color: var(--color-text);
 }
@@ -77,9 +77,28 @@
     color: var(--color-primary);
 }
 
+@media (max-width: 1024px) {
+    .section {
+        padding: 60px 0;
+    }
+
+    .header {
+        margin-bottom: 48px;
+    }
+
+    .card {
+        min-width: 350px;
+        max-width: 350px;
+    }
+}
+
 @media (max-width: 768px) {
-    .title {
-        font-size: 2rem;
+    .section {
+        padding: 48px 0;
+    }
+
+    .header {
+        margin-bottom: 40px;
     }
 
     .card {
@@ -90,5 +109,30 @@
 
     .scrollTrack {
         animation: scroll 40s linear infinite;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: 40px 0;
+    }
+
+    .header {
+        margin-bottom: 32px;
+    }
+
+    .card {
+        min-width: 280px;
+        max-width: 280px;
+        padding: 20px;
+    }
+
+    .quote {
+        font-size: 0.9375rem;
+        margin-bottom: 16px;
+    }
+
+    .scrollTrack {
+        animation: scroll 30s linear infinite;
     }
 }

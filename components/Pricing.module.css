@@ -299,7 +299,25 @@
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+    .section {
+        padding: 60px 0;
+    }
+
+    .tiersGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .title {
+        font-size: clamp(2rem, 5vw, 2.5rem);
+    }
+}
+
 @media (max-width: 768px) {
+    .section {
+        padding: 48px 0;
+    }
+
     .title {
         font-size: 2rem;
     }
@@ -310,6 +328,7 @@
 
     .tiersGrid {
         grid-template-columns: 1fr;
+        gap: 32px;
     }
 
     .processSteps {
@@ -328,5 +347,41 @@
     .cta,
     .roiExample {
         padding: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: 40px 0;
+    }
+
+    .header {
+        margin-bottom: 40px;
+    }
+
+    .title {
+        font-size: 1.75rem;
+    }
+
+    .subtitle {
+        font-size: 1.125rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .tierCard {
+        padding: 24px;
+    }
+
+    .processSection,
+    .cta,
+    .roiExample {
+        padding: 20px;
+    }
+
+    .ctaTitle {
+        font-size: 1.5rem;
     }
 }

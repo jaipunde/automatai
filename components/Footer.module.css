@@ -49,6 +49,38 @@
     color: var(--color-text);
     text-decoration: none;
     font-weight: 500;
+    padding: 4px 0;
+    display: inline-block;
+}
+
+.socialLinks {
+    display: flex;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.socialIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--color-gray-100);
+    color: var(--color-text);
+    transition: all 0.2s ease;
+}
+
+.socialIcon:hover {
+    background-color: var(--color-primary);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.socialIcon svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
 }
 
 .trustSignals {
@@ -74,4 +106,53 @@
 .legal a {
     color: var(--color-text-light);
     text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        padding: 60px 0 32px;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+
+    .links {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+
+    .bottom {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .legal {
+        justify-content: center;
+    }
+
+    .trustSignals {
+        padding: 32px 0;
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 48px 0 24px;
+    }
+
+    .links {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .legal {
+        flex-direction: column;
+        gap: 12px;
+    }
 }

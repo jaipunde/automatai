@@ -19,20 +19,7 @@ export default function Hero() {
                             <a href="#testimonials" className="btn btn-outline">See Real Results</a>
                         </div>
 
-                        <div className={styles.features}>
-                            <div className={styles.feature}>
-                                <span className={styles.featureIcon}>⚡</span>
-                                <span>Save Time</span>
-                            </div>
-                            <div className={styles.feature}>
-                                <span className={styles.featureIcon}>🔄</span>
-                                <span>Reduce Errors</span>
-                            </div>
-                            <div className={styles.feature}>
-                                <span className={styles.featureIcon}>📈</span>
-                                <span>Scale Growth</span>
-                            </div>
-                        </div>
+
                     </div>
 
                     <div className={styles.heroImage}>
