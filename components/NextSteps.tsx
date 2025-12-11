@@ -1,13 +1,7 @@
 import styles from './NextSteps.module.css';
 
-interface Step {
-    title: string;
-    description?: string;
-    items?: string[];
-}
-
 export default function NextSteps() {
-    const steps: Step[] = [
+    const steps = [
         {
             title: "Book your free automation audit",
             description: "30 minutes, zero pressure."
@@ -41,7 +35,7 @@ export default function NextSteps() {
                         <div className={styles.stepNumber}>2</div>
                         <h3>{steps[1].title}</h3>
                         <ul>
-                            {(steps[1].items || []).map((item, i) => (
+                            {steps[1].items.map((item, i) => (
                                 <li key={i}>{item}</li>
                             ))}
                         </ul>
