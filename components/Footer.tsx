@@ -13,16 +13,6 @@ export default function Footer() {
 
                     <div className={styles.links}>
                         <div className={styles.linkGroup}>
-                            <h4 className={styles.linkTitle}>Navigate</h4>
-                            <ul className={styles.linkList}>
-                                <li><a href="#who-we-transform">What We Do</a></li>
-                                <li><a href="#case-studies">Real Results</a></li>
-                                <li><a href="#how-it-works">How It Works</a></li>
-                                <li><a href="#contact">Get Started</a></li>
-                            </ul>
-                        </div>
-
-                        <div className={styles.linkGroup}>
                             <h4 className={styles.linkTitle}>Connect</h4>
                             <ul className={styles.linkList}>
                                 <li><a href="mailto:hello@automatai.in">hello@automatai.in</a></li>
