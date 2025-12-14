@@ -40,7 +40,7 @@ export default function RootLayout({
       <body>
         <ThemeProvider
           attribute="data-theme"
-          defaultTheme="system"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
