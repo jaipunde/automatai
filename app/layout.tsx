@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   description: "Stop wasting hours on work a computer should handle. We build intelligent automation that works while you sleep—so you can focus on what actually grows your business.",
   keywords: "automation, AI, business automation, workflow automation, productivity, lead generation, content creation, sales automation",
   authors: [{ name: "AutomatAI" }],
+  icons: {
+    icon: '/Gemini_Generated_Image_7zeks07zeks07zek.png',
+  },
   openGraph: {
     title: "AutomatAI - Intelligent Business Automation",
     description: "We turn 'I wish this was automatic' into reality. AI-powered automation for recruiting, marketing, sales, and more.",
