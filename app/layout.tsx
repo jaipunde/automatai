@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "AutomatAI - Your Business Runs on Repeat Tasks. We Make Them Disappear.",
+  title: "AaaaautomatAI - Your Business Runs on Repeat Tasks. We Make Them Disappear.",
   description: "Stop wasting hours on work a computer should handle. We build intelligent automation that works while you sleep—so you can focus on what actually grows your business.",
   keywords: "automation, AI, business automation, workflow automation, productivity, lead generation, content creation, sales automation",
   authors: [{ name: "AutomatAI" }],
