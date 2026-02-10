@@ -36,7 +36,7 @@ export default function Header() {
                         />
                         <div className={styles.logoTextContainer}>
                             <span className={styles.logoText}>AUTOMATAI.IN</span>
-                            <span className={styles.logoTagline}>Stop doing. Start growing.</span>
+                            <span className={styles.logoTagline}>Stooooop doing. Start growing.</span>
                         </div>
                     </Link>
 
