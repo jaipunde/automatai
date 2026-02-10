@@ -47,26 +47,11 @@
 }
 
 /* Logo Switching Logic */
-.logoImageLight {
+.logoImage {
     display: block;
     height: 48px;
     /* Adjust height as needed */
     width: auto;
-}
-
-.logoImageDark {
-    display: none;
-    height: 48px;
-    width: auto;
-}
-
-/* When dark mode is active (global attribute), toggle visibility */
-:global([data-theme='dark']) .logoImageLight {
-    display: none;
-}
-
-:global([data-theme='dark']) .logoImageDark {
-    display: block;
 }
 
 .actions {
@@ -216,8 +201,7 @@
         display: none;
     }
 
-    .logoImageLight,
-    .logoImageDark {
+    .logoImage {
         height: 40px;
     }
 
@@ -235,8 +219,7 @@
         padding: 16px 0;
     }
 
-    .logoImageLight,
-    .logoImageDark {
+    .logoImage {
         height: 36px;
     }
 

@@ -24,9 +24,9 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 // In the POST function, replace the comment with:
 await resend.emails.send({
-    from: 'AutomatAI <noreply@yourdomain.com>',
+    from: 'Grosonic <noreply@yourdomain.com>',
     to: email,
-    subject: 'Meeting Confirmation - AutomatAI',
+    subject: 'Meeting Confirmation - Grosonic',
     html: `
         <h2>Meeting Confirmed!</h2>
         <p>Hi ${name},</p>
@@ -39,7 +39,7 @@ await resend.emails.send({
 
 // Send to your team
 await resend.emails.send({
-    from: 'AutomatAI <noreply@yourdomain.com>',
+    from: 'Grosonic <noreply@yourdomain.com>',
     to: process.env.YOUR_EMAIL!,
     subject: 'New Meeting Scheduled',
     html: `
@@ -77,7 +77,7 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY!);
 await sgMail.send({
     to: email,
     from: 'noreply@yourdomain.com',
-    subject: 'Meeting Confirmation - AutomatAI',
+    subject: 'Meeting Confirmation - Grosonic',
     html: `...`
 });
 ```

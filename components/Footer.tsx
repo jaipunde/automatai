@@ -7,7 +7,7 @@ export default function Footer() {
             <div className="container">
                 <div className={styles.content}>
                     <div className={styles.brand}>
-                        <h3 className={styles.logo}>AutomatAI</h3>
+                        <h3 className={styles.logo}>Grosonic</h3>
                         <p className={styles.tagline}>Time saved. Growth unlocked. Life easier.</p>
                     </div>
 
@@ -15,7 +15,7 @@ export default function Footer() {
                         <div className={styles.linkGroup}>
                             <h4 className={styles.linkTitle}>Connect</h4>
                             <ul className={styles.linkList}>
-                                <li><a href="mailto:hello@automatai.in">hello@automatai.in</a></li>
+                                <li><a href="mailto:hello@grosonic.in">hello@grosonic.in</a></li>
                             </ul>
                             <div className={styles.socialLinks}>
                                 <a href="#" aria-label="YouTube" className={styles.socialIcon}>
@@ -36,7 +36,7 @@ export default function Footer() {
 
 
                 <div className={styles.bottom}>
-                    <p className={styles.copyright}>© 2025 AutomatAI. All rights reserved.</p>
+                    <p className={styles.copyright}>© 2025 Grosonic. All rights reserved.</p>
                     <div className={styles.legal}>
                         <Link href="/privacy">Privacy Policy</Link>
                         <span>•</span>

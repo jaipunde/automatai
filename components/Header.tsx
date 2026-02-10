@@ -21,21 +21,13 @@ export default function Header() {
             <div className="container">
                 <div className={styles.navWrapper}>
                     <Link href="/" className={styles.logo} onClick={closeMobileMenu}>
-                        {/* Light Mode Logo (Visible by default, hidden in dark mode) */}
                         <img
-                            src="/Gemini_Generated_Image_7zeks07zeks07zek.png"
-                            alt="AutomatAI Logo"
-                            className={styles.logoImageLight}
-                        />
-
-                        {/* Dark Mode Logo (Hidden by default, visible in dark mode) */}
-                        <img
-                            src="/Gemini_Generated_Image_ic1alvic1alvic1a.png"
-                            alt="AutomatAI Logo"
-                            className={styles.logoImageDark}
+                            src="/grosonic-logo.png"
+                            alt="Grosonic Logo"
+                            className={styles.logoImage}
                         />
                         <div className={styles.logoTextContainer}>
-                            <span className={styles.logoText}>AUTOMATAI.IN</span>
+                            <span className={styles.logoText}>GROSONIC</span>
                             <span className={styles.logoTagline}>Stooooop doing. Start growing.</span>
                         </div>
                     </Link>

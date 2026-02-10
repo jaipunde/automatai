@@ -2,22 +2,22 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "AutomatAI - Your Business Runs on Repeat Tasks. We Make Them Disappear.",
+  title: "Grosonic - Your Business Runs on Repeat Tasks. We Make Them Disappear.",
   description: "Stop wasting hours on work a computer should handle. We build intelligent automation that works while you sleep—so you can focus on what actually grows your business.",
   keywords: "automation, AI, business automation, workflow automation, productivity, lead generation, content creation, sales automation",
-  authors: [{ name: "AutomatAI" }],
+  authors: [{ name: "Grosonic" }],
   icons: {
-    icon: '/Gemini_Generated_Image_7zeks07zeks07zek.png',
+    icon: '/grosonic-logo.png',
   },
   openGraph: {
-    title: "AutomatAI - Intelligent Business Automation",
+    title: "Grosonic - Intelligent Business Automation",
     description: "We turn 'I wish this was automatic' into reality. AI-powered automation for recruiting, marketing, sales, and more.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AutomatAI - Intelligent Business Automation",
+    title: "Grosonic - Intelligent Business Automation",
     description: "We turn 'I wish this was automatic' into reality.",
   },
   viewport: {

@@ -4,8 +4,8 @@ import Footer from '@/components/Footer';
 import styles from './terms.module.css';
 
 export const metadata = {
-    title: 'Terms & Conditions - AutomatAI',
-    description: 'Terms & Conditions governing the use of AutomatAI services and website.',
+    title: 'Terms & Conditions - Grosonic',
+    description: 'Terms & Conditions governing the use of Grosonic services and website.',
 };
 
 export default function TermsPage() {
@@ -20,13 +20,13 @@ export default function TermsPage() {
                             <h1 className={styles.title}>Terms & Conditions</h1>
                             <div className={styles.meta}>
                                 <p><strong>Effective date:</strong> January 1st, 2026</p>
-                                <p><strong>Legal entity:</strong> AutomatAI ("AutomatAI," "we," "us," or "our")</p>
-                                <p><strong>Website:</strong> <a href="https://automatai.in" target="_blank" rel="noopener noreferrer">https://automatai.in</a> (the "Site")</p>
+                                <p><strong>Legal entity:</strong> Grosonic ("Grosonic," "we," "us," or "our")</p>
+                                <p><strong>Website:</strong> <a href="https://grosonic.in" target="_blank" rel="noopener noreferrer">https://grosonic.in</a> (the "Site")</p>
                             </div>
                             <p className={styles.intro}>
-                                Welcome to AutomatAI's Terms & Conditions. Our Terms & Conditions are designed to govern
+                                Welcome to Grosonic's Terms & Conditions. Our Terms & Conditions are designed to govern
                                 the activities of visitors on our website and the relationship between our visitors and
-                                AutomatAI. We understand the importance of tailoring our Terms to the specific needs of
+                                Grosonic. We understand the importance of tailoring our Terms to the specific needs of
                                 our website, especially as an AI Automation agency.
                             </p>
                         </div>
@@ -52,7 +52,7 @@ export default function TermsPage() {
                         <section className={styles.section}>
                             <h2>3) What We Do</h2>
                             <p>
-                                AutomatAI provides AI automation development, consulting, and related advisory services.
+                                Grosonic provides AI automation development, consulting, and related advisory services.
                                 A consultation provides general guidance based on information you share. It is not legal,
                                 financial, tax, accounting, medical, or compliance advice.
                             </p>
@@ -99,7 +99,7 @@ export default function TermsPage() {
                         <section className={styles.section}>
                             <h2>8) Intellectual Property</h2>
                             <ul>
-                                <li><strong>Site Content.</strong> The Site and its content (text, graphics, logos, code, templates) are owned by AutomatAI or our licensors and protected by IP laws.</li>
+                                <li><strong>Site Content.</strong> The Site and its content (text, graphics, logos, code, templates) are owned by Grosonic or our licensors and protected by IP laws.</li>
                                 <li><strong>Limited License.</strong> We grant you a personal, non-exclusive, non-transferable license to access and use the Site for its intended purpose.</li>
                                 <li><strong>Deliverables.</strong> Any automation workflows, documents, or artifacts we create during or after an engagement are subject to the terms of a separate written contract or proposal.</li>
                                 <li><strong>Feedback.</strong> If you provide suggestions or feedback, you grant us a royalty-free, worldwide license to use them for product/service improvement.</li>
@@ -165,7 +165,7 @@ export default function TermsPage() {
                         <section className={styles.section}>
                             <h2>14) Limitation of Liability</h2>
                             <p>
-                                To the maximum extent permitted by law, AutomatAI and its owners, employees, or contractors
+                                To the maximum extent permitted by law, Grosonic and its owners, employees, or contractors
                                 will not be liable for indirect, incidental, special, consequential, or punitive damages,
                                 or any lost profits, revenues, data, or business opportunities, arising from or related to
                                 your use of the Site or Services.
@@ -179,7 +179,7 @@ export default function TermsPage() {
                         <section className={styles.section}>
                             <h2>15) Indemnification</h2>
                             <p>
-                                You agree to indemnify and hold harmless AutomatAI from any claims, damages, losses,
+                                You agree to indemnify and hold harmless Grosonic from any claims, damages, losses,
                                 liabilities, costs, and expenses (including reasonable attorneys' fees) arising from:
                             </p>
                             <ul>
@@ -244,8 +244,8 @@ export default function TermsPage() {
                         <section className={styles.section}>
                             <h2>22) Contact Us</h2>
                             <ul>
-                                <li><strong>Email:</strong> <a href="mailto:hello@automatai.in">hello@automatai.in</a></li>
-                                <li><strong>Website:</strong> <a href="https://automatai.in" target="_blank" rel="noopener noreferrer">https://automatai.in</a></li>
+                                <li><strong>Email:</strong> <a href="mailto:hello@grosonic.in">hello@grosonic.in</a></li>
+                                <li><strong>Website:</strong> <a href="https://grosonic.in" target="_blank" rel="noopener noreferrer">https://grosonic.in</a></li>
                             </ul>
                         </section>
 

@@ -17,7 +17,7 @@ export default function ScheduleMeet() {
                 <div className={styles.content}>
                     <div
                         className="calendly-inline-widget"
-                        data-url="https://calendly.com/automataimeet/schedule-a-meeting-automatai?hide_event_type_details=1&hide_gdpr_banner=1"
+                        data-url="https://calendly.com/automataimeet/schedule-a-meeting-grosonic?hide_event_type_details=1&hide_gdpr_banner=1"
                         style={{ minWidth: '320px', height: '1000px', width: '100%' }}
                     />
                     <Script

@@ -1,7 +1,7 @@
 # Responsive Design Updates
 
 ## Overview
-Your AutomatAI website is now fully responsive and compatible with all devices! The website has been optimized to provide an excellent user experience across desktops, laptops, tablets, and mobile phones.
+Your Grosonic website is now fully responsive and compatible with all devices! The website has been optimized to provide an excellent user experience across desktops, laptops, tablets, and mobile phones.
 
 ## Key Improvements
 

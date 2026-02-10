@@ -4,8 +4,8 @@ import Footer from '@/components/Footer';
 import styles from '../terms/terms.module.css';
 
 export const metadata = {
-    title: 'Privacy Policy - AutomatAI',
-    description: 'AutomatAI Privacy Policy - Learn how we collect, use, and protect your information.',
+    title: 'Privacy Policy - Grosonic',
+    description: 'Grosonic Privacy Policy - Learn how we collect, use, and protect your information.',
 };
 
 export default function PrivacyPage() {
@@ -20,7 +20,7 @@ export default function PrivacyPage() {
                             <h1 className={styles.title}>Privacy Policy</h1>
                             <div className={styles.meta}>
                                 <p><strong>Effective date:</strong> January 1st, 2026</p>
-                                <p><strong>Who we are:</strong> AutomatAI ("we", "us", "our") provides AI automation development, consulting, and related services via our website and booking pages.</p>
+                                <p><strong>Who we are:</strong> Grosonic ("we", "us", "our") provides AI automation development, consulting, and related services via our website and booking pages.</p>
                             </div>
                         </div>
 
@@ -200,8 +200,8 @@ export default function PrivacyPage() {
                             <h2>14) Contact us</h2>
                             <p>Questions, requests, or privacy concerns?</p>
                             <ul>
-                                <li><strong>Email:</strong> <a href="mailto:hello@automatai.in">hello@automatai.in</a></li>
-                                <li><strong>Website:</strong> <a href="https://automatai.in" target="_blank" rel="noopener noreferrer">https://automatai.in</a></li>
+                                <li><strong>Email:</strong> <a href="mailto:hello@grosonic.in">hello@grosonic.in</a></li>
+                                <li><strong>Website:</strong> <a href="https://grosonic.in" target="_blank" rel="noopener noreferrer">https://grosonic.in</a></li>
                             </ul>
                             <p><strong>Response time:</strong> We aim to respond to privacy requests within 30 days.</p>
                             <p><strong>Grievance Officer (India):</strong> For complaints under Indian data protection law, contact us at the email above with "DPDP Grievance" in the subject line.</p>

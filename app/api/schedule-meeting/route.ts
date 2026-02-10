@@ -39,7 +39,7 @@ export async function POST(request: NextRequest) {
         // Example: Send email notification using a service like Resend, SendGrid, etc.
         // await sendEmail({
         //     to: email,
-        //     subject: 'Meeting Confirmation - AutomatAI',
+        //     subject: 'Meeting Confirmation - Grosonic',
         //     html: `
         //         <h2>Meeting Confirmed!</h2>
         //         <p>Hi ${name},</p>
@@ -52,7 +52,7 @@ export async function POST(request: NextRequest) {
 
         // Also send notification to your team
         // await sendEmail({
-        //     to: 'your-team@automatai.com',
+        //     to: 'your-team@grosonic.com',
         //     subject: 'New Meeting Scheduled',
         //     html: `
         //         <h2>New Meeting Request</h2>

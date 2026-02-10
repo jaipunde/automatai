@@ -21,7 +21,7 @@ export default function Contact() {
                         <p className={styles.note}>
                             No sales pitch. No obligation. Just honest advice on whether automation is right for you.
                         </p>
-                        <a href="mailto:hello@automatai.in" className="btn btn-primary btn-xl">
+                        <a href="mailto:hello@grosonic.in" className="btn btn-primary btn-xl">
                             Claim Your Free Audit
                         </a>
                     </div>
@@ -31,8 +31,8 @@ export default function Contact() {
                             <div className={styles.infoIcon}>📧</div>
                             <div>
                                 <div className={styles.infoLabel}>Email</div>
-                                <a href="mailto:hello@automatai.in" className={styles.infoValue}>
-                                    hello@automatai.in
+                                <a href="mailto:hello@grosonic.in" className={styles.infoValue}>
+                                    hello@grosonic.in
                                 </a>
                             </div>
                         </div>
