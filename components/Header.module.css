@@ -16,25 +16,11 @@
 
 .logo {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 4px;
     text-decoration: none;
     color: inherit;
-}
-
-.logoTextContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    line-height: 1;
-    margin-top: 12px;
-}
-
-.logoText {
-    font-weight: 800;
-    font-size: 1.4rem;
-    letter-spacing: -0.02em;
-    color: var(--color-text);
 }
 
 .logoTagline {
@@ -43,14 +29,14 @@
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: var(--color-text-light);
-    margin-top: 2px;
+    margin-top: 0;
+    text-align: center;
 }
 
 /* Logo Switching Logic */
 .logoImage {
     display: block;
-    height: 48px;
-    /* Adjust height as needed */
+    height: 32px;
     width: auto;
 }
 
@@ -175,10 +161,6 @@
         gap: 16px;
     }
 
-    .logoText {
-        font-size: 1.2rem;
-    }
-
     .logoTagline {
         font-size: 0.6rem;
     }
@@ -202,11 +184,7 @@
     }
 
     .logoImage {
-        height: 40px;
-    }
-
-    .logoText {
-        font-size: 1.1rem;
+        height: 28px;
     }
 
     .logoTagline {
@@ -220,15 +198,7 @@
     }
 
     .logoImage {
-        height: 36px;
-    }
-
-    .logoTextContainer {
-        margin-top: 8px;
-    }
-
-    .logoText {
-        font-size: 1rem;
+        height: 24px;
     }
 
     .logoTagline {

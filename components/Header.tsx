@@ -26,10 +26,7 @@ export default function Header() {
                             alt="Grosonic Logo"
                             className={styles.logoImage}
                         />
-                        <div className={styles.logoTextContainer}>
-                            <span className={styles.logoText}>GROSONIC</span>
-                            <span className={styles.logoTagline}>Stooooop doing. Start growing.</span>
-                        </div>
+                        <span className={styles.logoTagline}>Stop doing. Start growing.</span>
                     </Link>
 
                     <div className={styles.actions}>
